@@ -5,10 +5,19 @@ function update_cluster() {
     CLUSTER=$(cat ~/.config/cheeky-prompt/cluster 2>/dev/null)
 }
 
+function gcloud_project() {
+  local project=$(gcloud config get-value project 2>/dev/null)
+  if [[ -n $project ]]; then
+    echo "%F{#1abc9c}☁️  [${project}]"
+  fi
+}
+
 function rprompt() {
-  if [[ $(cat ~/.config/cheeky-prompt/cluster 2>/dev/null) = "prod" ]]; then
+  if [[ ${CLUSTER} = "" ]]; then
+    gcloud_project
+  elif [[ ${CLUSTER} = "prod" ]]; then
     echo "%F{#f1c40f} 🌶️  [${CLUSTER}]"
-  elif [ $(cat ~/.config/cheeky-prompt/cluster 2>/dev/null) = "preprod" ]; then
+  elif [ ${CLUSTER} = "preprod" ]; then
     echo "%F{#9b59b6} ☁️  [${CLUSTER}]"
   else
     echo "%F{#1abc9c} ☁️  [${CLUSTER}]"
