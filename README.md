@@ -17,12 +17,12 @@ The prompt features:
 ### zsh / oh-my-zsh
 1. Download the theme in your Downloads folder
 ```sh
-$ git clone --quiet git@github.com:kampanosg/zsh-cheeky-prompt.git ~/Downloads
+git clone --quiet git@github.com:kampanosg/zsh-cheeky-prompt.git ~/Downloads/zsh-cheeky-prompt
 
 ```
 2. Move the theme in the `oh-my-zsh` custom themes directory
 ```sh
-$ cp ~/Downloads/zsh-cheeky-prompt/cheekyprompt.zsh-theme ~/.oh-my-zsh/custom/themes
+cp ~/Downloads/zsh-cheeky-prompt/cheekyprompt.zsh-theme ~/.oh-my-zsh/custom/themes
 ```
 
 3. Activate the theme in your `.zhrc`
