@@ -3,7 +3,7 @@ A simple yet effective ~theme~ prompt for your PERiTerm. Developed specifically 
 
 The prompt features:
 1. Chicken emoji (there isn't a Barci one yet)
-1. Current working directory: Useful since most of the work is focused within the monorepo
+1. Current working directory: Useful since most of the work is in the monorepo
 1. Git information
 1. Current Active GCP Cluster / GCP Project
 1. Command input in new line
