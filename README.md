@@ -39,5 +39,5 @@ The `cluster` file can hold the name of the cluster that it's currently active. 
 In my `.shrc`, I have an `alias` when I want to connect to any cluster. At the end of the connection sequence, I've added an `echo` command to write the current cluster to the config file. For example:
 
 ```sh
-alias dev='export GOOGLE_APPLICATION_CREDENTIALS="<secret>" && ... && echo "dev" > ~/.config/cheeky-prompt/cluster'
+alias dev='... && echo "dev" > ~/.config/cheeky-prompt/cluster'
 ```
