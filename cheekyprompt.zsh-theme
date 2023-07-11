@@ -20,7 +20,7 @@ function rprompt() {
   elif [ ${CLUSTER} = "preprod" ]; then
     echo "%F{#9b59b6} ☁️  [${CLUSTER}]"
   elif [ ${CLUSTER} = "infra-dev" ]; then
-    echo "%F{##e84393} 🛠️ [${CLUSTER}]"
+    echo "%F{#e84393} 🛠️ [${CLUSTER}]"
   else
     echo "%F{#1abc9c} ☁️  [${CLUSTER}]"
   fi
