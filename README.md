@@ -1,4 +1,4 @@
-# zsh-cheeky-prompt
+# cheeky-prompt.zsh
 A simple yet effective ~theme~ prompt for your PERiTerm. Developed specifically for my day-to-day use within Nando's as I couldn't find one that covered all my needs. Hopefully, it can spice up your terminal as well 🌶️
 
 The prompt features:
@@ -17,12 +17,12 @@ The prompt features:
 ### zsh / oh-my-zsh
 1. Download the theme in your Downloads folder
 ```sh
-git clone --quiet git@github.com:kampanosg/zsh-cheeky-prompt.git ~/Downloads/zsh-cheeky-prompt
+git clone --quiet git@github.com:kampanosg/cheeky-prompt.zsh.git ~/Downloads/cheeky-prompt.zsh
 
 ```
 2. Move the theme in the `oh-my-zsh` custom themes directory
 ```sh
-cp ~/Downloads/zsh-cheeky-prompt/cheekyprompt.zsh-theme ~/.oh-my-zsh/custom/themes
+cp ~/Downloads/cheeky-prompt.zsh/cheekyprompt.zsh-theme ~/.oh-my-zsh/custom/themes
 ```
 
 3. Activate the theme in your `.zhrc`
